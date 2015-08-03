@@ -31,7 +31,16 @@ TemplateClass.setChecked = function(domNode, checked) {
 
 TemplateClass.bindVarToElement = function(domNode, reactiveVar, options) {
   var $em = resolveElement(domNode);
-  options = _.extend({
+  Templates.bindVarToElement($em, reactiveVar, getBindOptions($em, options));
+};
+
+TemplateClass.bindSessionToElement = function(domNode, sessionVarName, options) {
+  var $em = resolveElement(domNode);
+  Templates.bindSessionToElement($em, sessionVarName, getBindOptions($em, options));
+};
+
+function getBindOptions($em, options) {
+  return _.extend({
     setValue: function(value) {
       TemplateClass.setChecked($em, value);
     },
@@ -39,8 +48,7 @@ TemplateClass.bindVarToElement = function(domNode, reactiveVar, options) {
       return TemplateClass.isChecked($em);
     }
   }, options);
-  Templates.bindVarToElement($em, reactiveVar, options);
-};
+}
 
 function setUp() {
   return getTemplate().$('.ui.checkbox').checkbox();
