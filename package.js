@@ -14,7 +14,7 @@ Package.on_use(function(api) {
     'aramk:utility@0.8.1'
   ], 'client');
   api.use([
-    'semantic:ui-css@1.11.4'
+    'semantic:ui-css@2.0.8'
   ], 'client', {weak: true});
   api.add_files([
     'src/checkbox.html',
