@@ -11,7 +11,7 @@ Package.on_use(function(api) {
     'templating',
     'underscore',
     'jquery',
-    'aramk:utility@0.8.1'
+    'urbantic:utility@1.2.0'
   ], 'client');
   api.use([
     'semantic:ui-css@2.0.8'
