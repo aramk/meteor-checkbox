@@ -1,7 +1,7 @@
 Package.describe({
   name: 'aramk:checkbox',
   summary: 'A reactive checkbox widget',
-  version: '0.1.0',
+  version: '0.1.1',
   git: 'https://github.com/aramk/meteor-checkbox.git'
 });
 
