@@ -14,7 +14,7 @@ Package.on_use(function(api) {
     'urbanetic:utility@2.0.0'
   ], 'client');
   api.use([
-    'semantic:ui-css@2.0.8'
+    'semantic:ui-css@2.1.2'
   ], 'client', {weak: true});
   api.add_files([
     'src/checkbox.html',
