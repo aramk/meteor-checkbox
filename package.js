@@ -8,7 +8,7 @@ Package.describe({
 Package.on_use(function(api) {
   api.versionsFrom('METEOR@1.6.1');
   api.use([
-    'templating',
+    'templating@1.3.2',
     'underscore',
     'jquery',
     'urbanetic:utility@2.0.0'
