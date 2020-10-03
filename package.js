@@ -1,7 +1,7 @@
 Package.describe({
   name: 'aramk:checkbox',
   summary: 'A reactive checkbox widget',
-  version: '1.0.0',
+  version: '1.1.0',
   git: 'https://github.com/aramk/meteor-checkbox.git'
 });
 
@@ -14,7 +14,7 @@ Package.on_use(function(api) {
     'urbanetic:utility@2.0.0'
   ], 'client');
   api.use([
-    'semantic:ui-css@2.1.2'
+    'aramk:semantic-ui@2.4.1_1'
   ], 'client', {weak: true});
   api.add_files([
     'src/checkbox.html',
